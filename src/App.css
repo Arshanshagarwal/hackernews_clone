@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+a{
+  cursor: pointer;
+}
+.base{
+  background-color: #f6f6ef;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  
+}
+/*table*/
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 8pt;
+}
+th {
+  padding: 7px;
+  text-align: left;
+  font-size: 12pt;
+}
+td {
+  padding: 7px;
+  text-align: center;
+}
+.votearrow {
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #989899;
+}
+.title .head {
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  font-size: 10pt;
+  font-weight: 550;
+  margin-right: 8px;
+}
+.title .k {
+  color: #848688;
+  margin-right: 8px;
+}
+.title .auth {
+  color: black;
+
+  margin-right: 8px;
+}
+.title .s {
+  color: #828282;
+}
+a {
+  color: #828282;
+}
+a:visited {
+  color: #828282;
+}
+tr:nth-child(even) {
+  background-color: #e6e5e0;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.chart{
+  background-color: #F4F4EE;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10pt;
+  margin-bottom: 20pt;
+}
+.action{
+  display: flex;
+  justify-content: flex-end;
+}
+.action #sep{
+  border-left: 3px solid #FE6723;
+  height: 20px;
+}
+.action > div{
+  text-align: center;
+  margin: 10px;
+}
+.action a{
+  color: #FE6723;
+  cursor: pointer;
+  font-size: 13pt;
+  font-weight: 550;
+  text-decoration: none;
+}
+.base > #bar{
+  border-top: 3px solid #FE6723;
+  width: 100%;
+}
+#container{
+  display: flex;
+  align-items: center;
+  flex-wrap:nowrap;
+  padding: 1px 0 1px 1px;
+}
+#container >  #vote{
+  transform: rotate(-90deg);
+  margin-right: -59px;
+  margin-left: 23px;
+
+}
+.base > #container > #vote,  #id{
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  font-size: 15pt;
+  font-weight: 800;
+}
