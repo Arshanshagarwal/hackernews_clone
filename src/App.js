@@ -36,7 +36,7 @@ function App() {
   };
   const fetchData = async (arg) => {
     await axios
-      .get(`http://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=10&page=${arg}`)
+      .get(`https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=10&page=${arg}`)
       .then((res) => {
         setnopg(res.data.nbPages);
         if (localStorage.getItem(`page-${arg}`) === null) {
