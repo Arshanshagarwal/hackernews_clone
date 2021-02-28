@@ -41,7 +41,7 @@ function App() {
   };
   const fetchData = async (arg) => {
     await axios
-      .get(`${PATH_BASE}${PATH_SEARCH}?${PARAM_TAGS}&${PARAM_HPP}&page=${arg}`)
+      .get(`${PATH_BASE}${PATH_SEARCH}?${PARAM_TAGS}&${PARAM_HPP}&${PARAM_PAGE}${arg}`)
       .then((res) => {
         setnopg(res.data.nbPages);
         if (localStorage.getItem(`page-${arg}`) === null) {
