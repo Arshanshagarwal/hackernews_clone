@@ -9,8 +9,6 @@ function App() {
   const [data, setdata] = useState([]);
   const [nopg, setnopg] = useState(0);
   const [currentpg, setcurrentpg] = useState(0);
-  const BASE_URL =
-    "http://hn.algolia.com/api/v1/search?tags=front_page";
   useEffect(() => {
     fetchData(0);
   }, []);
@@ -38,7 +36,7 @@ function App() {
   };
   const fetchData = async (arg) => {
     await axios
-      .get(`${BASE_URL}&hitsPerPage=10&page=${arg}`)
+      .get(`http://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=10&page=${arg}`)
       .then((res) => {
         setnopg(res.data.nbPages);
         if (localStorage.getItem(`page-${arg}`) === null) {
