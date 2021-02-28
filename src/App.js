@@ -7,10 +7,8 @@ import Buttons from "./components/buttons.jsx";
 
 function App() {
   const [data, setdata] = useState([]);
-  const [error, seterror] = useState("");
   const [nopg, setnopg] = useState(0);
   const [currentpg, setcurrentpg] = useState(0);
-  const [button, setbutton] = useState(0);
   let BASE_URL =
     "http://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=10";
   useEffect(() => {
@@ -49,9 +47,6 @@ function App() {
         } else {
           update(arg);
         }
-      })
-      .catch((err) => {
-        seterror(err);
       });
   };
   const prev = () => {

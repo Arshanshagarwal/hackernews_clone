@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import Chart from "./chart";
 
 const Table = ({ data, action, hide }) => {
   return (
@@ -28,7 +27,7 @@ const Table = ({ data, action, hide }) => {
           return (
             <tr key={index} className="items">
               <td style={{ color: "#292E30", fontWeight: 800 }}>
-                {value.num_comments == undefined ? 0 : value.num_comments}
+                {value.num_comments === undefined ? 0 : value.num_comments}
               </td>
               <td
                 style={{
