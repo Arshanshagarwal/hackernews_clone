@@ -9,7 +9,7 @@ function App() {
   const [data, setdata] = useState([]);
   const [nopg, setnopg] = useState(0);
   const [currentpg, setcurrentpg] = useState(0);
-  let BASE_URL =
+  const BASE_URL =
     "http://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=10";
   useEffect(() => {
     fetchData(0);
